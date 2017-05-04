@@ -1,7 +1,7 @@
 /**
  * Created by ssehacker on 2017/4/18.
  */
-import { go, request } from '../../util';
+import { go, request, getThemes } from '../../util';
 import Breadcrumb from '../../components/breadcrumb';
 import './ThemePage.less';
 
@@ -19,12 +19,12 @@ export default class PaySuccessPage extends React.Component {
   }
 
   renderList() {
-    return [1,2,3,4,5].map((item) => {
+    return getThemes().map((item) => {
       return (
-        <li key={item}>
-          <a onClick={() => {go(`/theme/${item}`);} }>
+        <li key={item.id}>
+          <a onClick={() => {go(`/theme/${item.id}`);} }>
             <cite><i className="iconfont icon-collect" /></cite>
-            <span>主题{item}</span>
+            <span>{item.name}</span>
             <i className="iconfont icon-right" />
           </a>
         </li>

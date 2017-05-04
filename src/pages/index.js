@@ -9,3 +9,4 @@ export IntroductionPage from './introduction';
 export About from './about';
 export Contact from './contact';
 export Join from './join';
+export Article from './article';

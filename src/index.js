@@ -8,6 +8,7 @@ import {
   About,
   Contact,
   Join,
+  Article,
 } from './pages';
 
 let { Router, Route, Link, hashHistory, IndexRoute} = ReactRouter;
@@ -37,6 +38,7 @@ ReactDOM.render((
       <Route path="about" component={About} />
       <Route path="contact" component={Contact} />
       <Route path="join" component={Join} />
+      <Route path="article/:id" component={Article} />
     </Route>
   </Router>
 ), document.getElementById('app'));

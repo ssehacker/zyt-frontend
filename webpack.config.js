@@ -67,7 +67,7 @@ module.exports = {
         ],
       }],
   },
-  postcss: [autoprefixer({ browsers: ['ie > 9', 'last 2 versions'] })],
+  postcss: [autoprefixer({ browsers: ['ie > 9', 'last 2 versions', '> 1%'] })],
   plugins,
   resolve: {
     extensions: ['', '.js', 'jsx', 'less'],
