@@ -3,26 +3,30 @@
 	height: 100vh;
 	background: #efefef;
 	overflow: hidden;
-	padding-top: 3rem;
 	.ws-breadcrumb {
 		margin-bottom: 10px;
 	}
-	.ws-article {
-		overflow: auto;
-		background: white;
-		padding: 0 10px 10px 10px;
-		border-radius: 4px;
-		margin: 10px 10px 10px 10px;
-		box-shadow: 0 0 2px 1px #ddd;
-		h3 {
-			height: 50px;
-			line-height: 50px;
-		}
-		.ws-article-content {
-			line-height: 2em;
-			color: #666;
-			.ws-highlight {
-				color: #FF9800;
+	.ws-articles {
+		height: calc(~"100vh - 3rem - 10px");
+		overflow-y: auto;
+		margin-top: calc(~"3rem + 10px");
+		.ws-article {
+			overflow: auto;
+			background: white;
+			padding: 0 10px 10px 10px;
+			border-radius: 4px;
+			margin: 10px 10px 10px 10px;
+			box-shadow: 0 0 2px 1px #ddd;
+			h3 {
+				height: 50px;
+				line-height: 50px;
+			}
+			.ws-article-content {
+				line-height: 2em;
+				color: #666;
+				.ws-highlight {
+					color: #FF9800;
+				}
 			}
 		}
 	}
