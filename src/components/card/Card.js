@@ -6,7 +6,7 @@ class Card extends React.Component {
 
   static propTypes = {
     title: PropTypes.string.isRequired,
-    date: PropTypes.number.isRequired, // 时间戳
+    date: PropTypes.string.isRequired, // 时间戳
     image: PropTypes.string,
     desc: PropTypes.string.isRequired,
     onClick: PropTypes.func,

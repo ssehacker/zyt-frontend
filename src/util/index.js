@@ -2,6 +2,9 @@
  * Created by ssehacker on 2017/4/18.
  */
 
+import themesData from '../data/themes';
+import articles from '../data/articles';
+
 const { hashHistory } = ReactRouter;
 
 export const go = function (url) {
@@ -9,20 +12,7 @@ export const go = function (url) {
 };
 
 export const getThemes = () => {
-  return [
-    {
-      id: '1',
-      name: '手足癣',
-    },
-    {
-      id: '2',
-      name: '灰指甲',
-    },
-    {
-      id: '3',
-      name: '手足外伤',
-    },
-  ];
+  return themesData;
 };
 
 export const indexBy = function (object, key) {
@@ -31,6 +21,18 @@ export const indexBy = function (object, key) {
     result[value[key]] = value;
     return result;
   }, {});
+};
+
+export const getArticleByThemeId = (themeId) => {
+  return articles.filter(item => (item.parent === themeId));
+};
+
+export const getArticleById = (articleId) => {
+  return articles.find(item => (item.id === articleId));
+};
+
+export const removeExpress = (str) => {
+  return str.replace(/#.+ /g, '').replace(/\n>/g, '');
 };
 
 export * as request from './request';

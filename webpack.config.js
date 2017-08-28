@@ -52,6 +52,14 @@ module.exports = {
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader', 'postcss-loader'),
       },
       {
+        test: /\.md$/,
+        loader: 'raw-loader',
+      },
+      {
+        test: /\.json$/,
+        loader: 'json',
+      },
+      {
         test: /\.less$/,
         loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!less-loader'),
       },

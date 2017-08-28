@@ -10,20 +10,12 @@ export default class PaySuccessPage extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
-
-  }
-
-  componentWillUnmount() {
-
-  }
-
   renderList() {
     return getThemes().map((item) => {
       return (
         <li key={item.id}>
           <a onClick={() => {go(`/theme/${item.id}`);} }>
-            <cite><i className="iconfont icon-collect" /></cite>
+            <cite><i className={`iconfont ${item.icon}`} /></cite>
             <span>{item.name}</span>
             <i className="iconfont icon-right" />
           </a>
