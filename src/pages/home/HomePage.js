@@ -23,7 +23,7 @@ export default class HomePage extends React.Component {
     return (
       <div className="ws-home">
         <div className="ws-banner">
-          五之行
+          <img src="/images/banner.jpeg" />
         </div>
         <div className="ws-box theme">
           <Link to="/theme">专题</Link>
