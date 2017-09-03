@@ -11,12 +11,9 @@ export default class HomePage extends React.Component {
     super(props);
   }
 
-  componentDidMount() {
-    
-  }
-
-  componentWillUnmount() {
-    
+  goto(path) {
+    const { history } = this.props;
+    history.push(path);
   }
 
   render() {
@@ -25,16 +22,20 @@ export default class HomePage extends React.Component {
         <div className="ws-banner">
           <img src="/images/banner.jpeg" />
         </div>
-        <div className="ws-box theme">
-          <Link to="/theme">专题</Link>
+        <div className="ws-box theme" onClick={this.goto.bind(this, '/theme')}>
+          <i className="iconfont icon-category" />
+          <a>专题</a>
         </div>
-        <div className="ws-box product">
-          <Link to="/intro">产品介绍</Link>
+        <div className="ws-box product" onClick={this.goto.bind(this, '/intro')}>
+          <i className="iconfont icon-shop" />
+          <a>微商城</a>
         </div>
-        <div className="ws-box about">
+        <div className="ws-box about" onClick={this.goto.bind(this, '/about')}>
+          <i className="iconfont icon-about" />
           <Link to="/about">关于我们</Link>
         </div>
-        <div className="ws-box join">
+        <div className="ws-box join" onClick={this.goto.bind(this, '/join')}>
+          <i className="iconfont icon-woshou" />
           <Link to="/join">招商加盟/人才招聘</Link>
         </div>
       </div>
