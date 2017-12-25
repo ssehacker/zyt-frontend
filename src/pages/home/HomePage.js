@@ -26,7 +26,7 @@ export default class HomePage extends React.Component {
           <i className="iconfont icon-category" />
           <a>专题</a>
         </div>
-        <div className="ws-box product" onClick={this.goto.bind(this, '/intro')}>
+        <div className="ws-box product" onClick={() => { window.location.href = 'https://kdt.im/l5ZB6h';}}>
           <i className="iconfont icon-shop" />
           <a>微商城</a>
         </div>
