@@ -9,6 +9,7 @@ import {
   Contact,
   Join,
   Article,
+  Jobs,
 } from './pages';
 
 let { Router, Route, Link, hashHistory, IndexRoute} = ReactRouter;
@@ -38,6 +39,7 @@ ReactDOM.render((
       <Route path="about" component={About} />
       <Route path="contact" component={Contact} />
       <Route path="join" component={Join} />
+      <Route path="jobs" component={Jobs} />
       <Route path="article/:id" component={Article} />
     </Route>
   </Router>
