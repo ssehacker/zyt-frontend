@@ -16,6 +16,11 @@ class Join extends React.Component {
     ];
 
     return list.map((item, index) => {
+      if (index === list.length - 1) {
+        return (
+          <span key={index}>{item}。</span>
+        );
+      }
       return (
         <span key={index}>{item}，</span>
       );
