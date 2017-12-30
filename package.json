@@ -6,7 +6,8 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --recursive -t 5000 --compilers js:babel-core/register",
     "start": "node ./mockServer/index.js",
-    "build": "webpack -w -d",
+    "build": "webpack -d",
+    "watch": "webpack -d -w",
     "eslint": "./node_modules/.bin/eslint src/;exit 0"
   },
   "author": "zhouyong",
