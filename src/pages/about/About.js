@@ -17,9 +17,10 @@ class About extends React.Component {
           <div className="ws-article">
             <h3>联系方式</h3>
             <div className="ws-article-content">
-              <p>电话： 0757-86766670</p>
-              <p>邮箱： xxx@gmail.com</p>
-              <p>想加入我们吗？发送简历到<span className="ws-highlight">xxx@gmail.com</span>。</p>
+              <p>联系人： 吴经理</p>
+              <p>电话： 13670079306</p>
+              <p>邮箱： hisangchunw@foxmail.com</p>
+              <p>想加入我们吗？发送简历到<span className="ws-highlight">hisangchunw@foxmail.com</span>。</p>
             </div>
           </div>
           <div className="ws-article">
